@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninho de Fé - Atividades Bíblicas para Colorir</title>
+
+    <meta name="description" content="Cansada das telas? Troque por momentos de fé e criatividade com nossa coleção completa de desenhos bíblicos para colorir. Atividades que ensinam a Palavra de Deus em família.">
+    <meta name="keywords" content="atividades bíblicas, desenhos para colorir, escola dominical, ministério infantil, atividades cristãs para crianças, historinhas bíblicas, material cristão infantil">
+
+    <meta property="og:title" content="Ninho de Fé - A forma mais divertida de aprender a Bíblia!">
+    <meta property="og:description" content="Menos tela, mais conexão. A coleção completa de desenhos bíblicos para despertar a fé e a criatividade dos seus filhos.">
+    <meta property="og:image" content="https://ninhodefe.com.br/imagem-compartilhamento.png"> 
+    <meta property="og:url" content="https://ninhodefe.com.br">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ninho de Fé - A forma mais divertida de aprender a Bíblia!">
+    <meta name="twitter:description" content="Menos tela, mais conexão. A coleção completa de desenhos bíblicos para despertar a fé e a criatividade dos seus filhos.">
+    <meta name="twitter:image" content="https://ninhodefe.com.br/imagem-compartilhamento.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body { font-family: 'Nunito', sans-serif; overflow-x: hidden; }
+        h1, h2, h3, h4, h5, h6 { font-weight: 800; }
+        h1 { font-size: 46px; }
+        h2 { font-size: 39px; }
+        h3 { font-size: 33px; }
+        h4 { font-size: 27px; }
+        .color-band { width: 100%; height: 40px; background: repeating-linear-gradient(90deg, #ef4444 0 70px, #f97316 70px 140px, #eab308 140px 210px, #22c55e 210px 280px, #3b82f6 280px 350px, #6366f1 350px 420px, #8b5cf6 420px 490px); background-size: 490px 40px; animation: bandmove 8s linear infinite; }
+        @keyframes bandmove { 0% { background-position: 0 0; } 100% { background-position: 490px 0; } }
+        .painting-hand { animation: paint-movement 2.5s ease-in-out infinite alternate; }
+        @keyframes paint-movement { 0% { transform: translate(-6px, 2px) rotate(-2deg) scale(1.03); } 30% { transform: translate(2px, 0px) rotate(0deg) scale(1); } 60% { transform: translate(8px, -2px) rotate(2deg) scale(0.97); } 100% { transform: translate(1px, 1px) rotate(-1deg) scale(1.02); } }
+        .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .swiper-button-next, .swiper-button-prev { color: #4a4a4a; background-color: rgba(255, 255, 255, 0.7); border-radius: 50%; width: 44px; height: 44px; transition: background-color 0.3s; display: none; }
+        .swiper-button-next:hover, .swiper-button-prev:hover { background-color: white; }
+        .swiper-button-next:after, .swiper-button-prev:after { font-size: 24px; font-weight: 900; }
+        .swiper-wrapper { transition-timing-function: linear; }
+        .swiper-slide { width: 300px; }
+        .swiper-slide img { width: 100%; height: auto; display: block; }
+        audio { display: none; }
+        #unmuteButton { position: absolute; bottom: 20px; right: 20px; background-color: rgba(0, 0, 0, 0.6); color: white; border: 2px solid rgba(255, 255, 255, 0.8); border-radius: 50%; width: 50px; height: 50px; font-size: 22px; cursor: pointer; z-index: 10; display: flex; justify-content: center; align-items: center; transition: background-color 0.3s, transform 0.2s; }
+        #unmuteButton:hover { background-color: rgba(0, 0, 0, 0.8); transform: scale(1.1); }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <section class="w-full bg-[#fef2f2] relative overflow-hidden">
+        <div class="color-band"></div>
+        <div class="container mx-auto px-6 py-8 md:py-16 flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-2/5 text-center md:text-left z-10">
+                <img src="logo-bg.png" alt="Logo Ninho de Fé" class="w-48 mx-auto md:mx-0 mb-6">
+                <h1 class="text-4xl md:text-5xl font-black text-gray-800 leading-tight">Menos Tela, Mais Conexão com Deus</h1>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-700 mt-2">A Coleção Completa de Histórias Bíblicas para Colorir</h2>
+                <p class="text-gray-600 mt-4 max-w-lg mx-auto md:mx-0">
+                    Cansada da luta contra as telas? Imagine seus filhos, felizes e concentrados, dando vida às histórias da Bíblia. Nossa coleção com ilustrações fofas e modernas transforma o aprendizado da Palavra de Deus em uma aventura criativa e cheia de fé.
+                </p>
+                <a href="https://pay.hotmart.com/Y102372828C" target="_blank" class="mt-8 inline-block bg-purple-600 text-white font-bold text-lg uppercase rounded-full px-10 py-4 shadow-lg hover:bg-purple-700 transition-transform transform hover:scale-105">
+                    QUERO O PACOTE COMPLETO AGORA!
+                </a>
+            </div>
+            <div class="w-full md:w-3/5 mt-10 md:mt-0 relative h-96">
+                <img src="maodesenho.png" alt="Prévia das páginas para colorir" class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-xl">
+                <img src="mao.png" alt="Mão colorindo um desenho" class="painting-hand absolute bottom-0 right-0 w-48 md:w-64 z-20">
+            </div>
+        </div>
+        <div class="color-band"></div>
+    </section>
+
+    <section class="bg-[#eff6ff] py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-pink-500 text-5xl font-black">OFERTA ESPECIAL DE LANÇAMENTO!</h3>
+            <h2 class="text-4xl font-black text-gray-800 mt-4">Leve a Coleção Completa: 4 Temas Incríveis!</h2>
+            <p class="text-gray-600 mt-4 max-w-3xl mx-auto">
+                Ao garantir seu acesso hoje, você não leva apenas um, mas <strong class="font-bold text-gray-800">QUATRO E-BOOKS COMPLETOS EM PDF</strong> para imprimir e se divertir quantas vezes quiser!
+            </p>
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:scale-105 transition-transform">
+                    <img src="capa-criacao.png" alt="Livro de Colorir Os 7 Dias da Criação" class="rounded-lg mx-auto">
+                    <h4 class="text-2xl font-bold mt-4">Os 7 Dias da Criação</h4>
+                    <p class="text-gray-600 mt-2">A maravilhosa história do início de tudo, dia após dia.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:scale-105 transition-transform">
+                    <img src="capa-noe.png" alt="Livro de Colorir A Arca de Noé" class="rounded-lg mx-auto">
+                    <h4 class="text-2xl font-bold mt-4">A Arca de Noé</h4>
+                    <p class="text-gray-600 mt-2">A história completa de Noé e o dilúvio, com animais adoráveis.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:scale-105 transition-transform">
+                    <img src="capa-milagres.png" alt="Livro de Colorir Os Milagres de Jesus" class="rounded-lg mx-auto">
+                    <h4 class="text-2xl font-bold mt-4">Os Milagres de Jesus</h4>
+                    <p class="text-gray-600 mt-2">Reviva os milagres mais incríveis de Jesus com lindas ilustrações.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:scale-105 transition-transform">
+                    <img src="capa-natal.png" alt="Livro de Colorir O Milagre do Natal" class="rounded-lg mx-auto">
+                    <h4 class="text-2xl font-bold mt-4">O Milagre do Natal</h4>
+                    <p class="text-gray-600 mt-2">A história do nascimento de Jesus, da visita do anjo à jornada dos reis magos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#ecfdf5] py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-black text-gray-800">Dê Vida a Essas Histórias Maravilhosas!</h2>
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto text-lg">Colorir é uma forma alegre e terapêutica de se conectar com a Palavra de Deus.</p>
+            <div class="mt-8 max-w-3xl mx-auto shadow-2xl rounded-2xl overflow-hidden border-8 border-white relative">
+                <video poster="capa-video.jpg" autoplay loop muted playsinline class="w-full h-auto">
+                    <source src="1009.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+                <audio id="background-audio" loop>
+                    <source src="1009.MP3" type="audio/mpeg">
+                    Seu navegador não suporta áudio.
+                </audio>
+                <button id="unmuteButton" title="Ativar Som">
+                    <i class="fas fa-volume-mute"></i>
+                </button>
+            </div>
+            </div>
+    </section>
+
+    <section id="purchase" class="bg-[#f0fdf4] py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-black text-gray-800">PREÇO ESPECIAL DE LANÇAMENTO</h2>
+            <h3 class="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 mt-2">Leve Tudo Hoje por um Preço Único!</h3>
+            
+            <div class="relative mt-8 max-w-4xl mx-auto flex justify-center items-center">
+                <div class="bg-white max-w-2xl w-full p-8 rounded-2xl shadow-2xl border-4 border-dashed border-yellow-400 relative z-10">
+                    <h4 class="text-2xl font-bold">PACOTE COMPLETO: 4 E-BOOKS EM PDF</h4>
+                    <p class="text-gray-600 mt-2">Tenha acesso vitalício para imprimir e usar quantas vezes quiser!</p>
+                    <p class="text-xl mt-4">De: <span class="line-through text-red-500">R$ 59,90</span> / Por Apenas:</p>
+                    <p class="text-6xl font-black text-gray-800 mt-2">R$ 15,00</p>
+                    <a href="https://pay.hotmart.com/Y102372828C" target="_blank" class="mt-8 inline-block bg-purple-600 text-white font-bold text-lg uppercase rounded-full px-10 py-4 shadow-lg hover:bg-purple-700 transition-transform transform hover:scale-105">
+                        SIM! QUERO MEU ACESSO COM DESCONTO!
+                    </a>
+                    <img src="capaproduto.png" alt="Pagamento Seguro com PIX e Cartão de Crédito" class="mx-auto mt-6">
+                    <div class="mt-4 text-gray-600 flex items-center justify-center space-x-2">
+                        <i class="fas fa-shield-alt text-green-500"></i>
+                        <span>Compra Segura | Garantia de 7 Dias</span>
+                    </div>
+                </div>
+                <img src="kid.png" alt="Criança feliz mostrando um desenho bíblico colorido" class="hidden lg:block absolute -right-4 bottom-0 w-64 z-20">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#f5f3ff] py-16 md:py-24 relative overflow-hidden">
+        <div class="color-band absolute top-0 left-0"></div>
+        <div class="container mx-auto px-6 text-center z-10 relative pt-12 pb-12">
+            <h2 class="text-4xl font-black text-gray-800">POR QUE O NINHO DE FÉ É PERFEITO PARA SUA FAMÍLIA?</h2>
+            <p class="text-gray-500 mt-4 italic">"Ensina a criança no caminho em que deve andar, e, ainda quando for velho, não se desviará dele." (Provérbios 22:6)</p>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-blue-50 p-8 rounded-2xl flex flex-col items-center text-center transition-transform hover:-translate-y-2">
+                    <div class="bg-blue-200 text-blue-700 p-4 rounded-full mb-4">
+                        <i class="fas fa-home text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800">Para os Pais: Menos Tela, Mais Conexão</h4>
+                    <p class="text-gray-600 mt-2">Crie memórias preciosas enquanto seus filhos aprendem valores eternos. Uma atividade calma que desenvolve a coordenação e fortalece a fé em família.</p>
+                </div>
+                <div class="bg-green-50 p-8 rounded-2xl flex flex-col items-center text-center transition-transform hover:-translate-y-2">
+                    <div class="bg-green-200 text-green-700 p-4 rounded-full mb-4">
+                        <i class="fas fa-church text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800">Para Igrejas: Ferramenta de Ministério</h4>
+                    <p class="text-gray-600 mt-2">Transforme a Escola Dominical ou o Ministério Infantil. Um material 100% bíblico, seguro e pronto para imprimir que as crianças vão amar.</p>
+                </div>
+                <div class="bg-yellow-50 p-8 rounded-2xl flex flex-col items-center text-center transition-transform hover:-translate-y-2">
+                    <div class="bg-yellow-200 text-yellow-700 p-4 rounded-full mb-4">
+                        <i class="fas fa-paint-brush text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800">Terapêutico e Divertido para Todos</h4>
+                    <p class="text-gray-600 mt-2">Colorir cenas bíblicas é uma forma de meditação. Acalma a mente, alivia o estresse e fortalece seu vínculo com a Palavra de um jeito leve e criativo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="color-band absolute bottom-0 left-0"></div>
+    </section>
+
+    <section class="bg-[#dcfce7] py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-black text-gray-800">Uma Espiadinha Dentro da Coleção</h2>
+            <div class="swiper-container mt-8 max-w-5xl mx-auto relative">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="noe1.png" class="rounded-xl shadow-lg border-4 border-white" alt="Exemplo de página para colorir 1"></div>
+                    <div class="swiper-slide"><img src="noe2.png" class="rounded-xl shadow-lg border-4 border-white" alt="Exemplo de página para colorir 2"></div>
+                    <div class="swiper-slide"><img src="natal1.png" class="rounded-xl shadow-lg border-4 border-white" alt="Exemplo de página para colorir 3"></div>
+                    <div class="swiper-slide"><img src="natal2.png" class="rounded-xl shadow-lg border-4 border-white" alt="Exemplo de página para colorir 4"></div>
+                    <div class="swiper-slide"><img src="milagres1.png" class="rounded-xl shadow-lg border-4 border-white" alt="Exemplo de página para colorir 5"></div>
+                    <div class="swiper-slide"><img src="milagres2.png" class="rounded-xl shadow-lg border-4 border-white" alt="Exemplo de página para colorir 6"></div>
+                    <div class="swiper-slide"><img src="dia1.png" class="rounded-xl shadow-lg border-4 border-white" alt="Exemplo de página para colorir 7"></div>
+                    <div class="swiper-slide"><img src="dia2.png" class="rounded-xl shadow-lg border-4 border-white" alt="Exemplo de página para colorir 8"></div>
+                    <div class="swiper-slide"><img src="noe1.png" class="rounded-xl shadow-lg border-4 border-white" alt="Exemplo de página para colorir 1"></div>
+                    <div class="swiper-slide"><img src="noe2.png" class="rounded-xl shadow-lg border-4 border-white" alt="Exemplo de página para colorir 2"></div>
+                    <div class="swiper-slide"><img src="natal1.png" class="rounded-xl shadow-lg border-4 border-white" alt="Exemplo de página para colorir 3"></div>
+                    <div class="swiper-slide"><img src="natal2.png" class="rounded-xl shadow-lg border-4 border-white" alt="Exemplo de página para colorir 4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#faf5ff] py-16 md:py-24">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-4xl font-black text-gray-800 text-center">PERGUNTAS FREQUENTES</h2>
+            <div class="mt-8 space-y-4" id="faq-container">
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-bold text-gray-800">
+                        <span>O que exatamente eu recebo no pacote?</span>
+                        <span class="transform transition-transform duration-300">&#9662;</span>
+                    </button>
+                    <div class="faq-content px-5 pb-5 text-gray-600">
+                        <p>Você recebe acesso imediato a 4 arquivos em PDF com dezenas de páginas para colorir: Os 7 Dias da Criação, A Arca de Noé, Os Milagres de Jesus e O Milagre do Natal.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-bold text-gray-800">
+                        <span>Como eu recebo o material?</span>
+                        <span class="transform transition-transform duration-300">&#9662;</span>
+                    </button>
+                    <div class="faq-content px-5 pb-5 text-gray-600">
+                        <p>O acesso é enviado para o seu e-mail logo após a confirmação do pagamento. Você pode baixar os arquivos na hora e já começar a colorir!</p>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-md">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-bold text-gray-800">
+                        <span>Quais são as formas de pagamento?</span>
+                        <span class="transform transition-transform duration-300">&#9662;</span>
+                    </button>
+                    <div class="faq-content px-5 pb-5 text-gray-600">
+                        <p>Aceitamos PIX e Cartão de Crédito. Tudo processado em um ambiente 100% seguro pela Hotmart, a maior plataforma de produtos digitais da América Latina.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-bold text-gray-800">
+                        <span>É um produto físico? Vou receber em casa?</span>
+                        <span class="transform transition-transform duration-300">&#9662;</span>
+                    </button>
+                    <div class="faq-content px-5 pb-5 text-gray-600">
+                        <p>NÃO. Este é um produto 100% digital. O acesso será enviado para o seu e-mail. A grande vantagem é que você pode imprimir os arquivos PDF quantas vezes quiser, para sempre.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Ninho de Fé. Todos os direitos reservados.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://www.facebook.com/profile.php?id=61582005335689" target="_blank" class="hover:text-pink-400">Facebook</a>
+                <a href="https://instagram.com/ninhodfe" target="_blank" class="hover:text-pink-400">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqContainer = document.getElementById('faq-container');
+            if (faqContainer) {
+                faqContainer.addEventListener('click', function(e) {
+                    const toggleButton = e.target.closest('.faq-toggle');
+                    if (!toggleButton) return;
+                    const content = toggleButton.nextElementSibling;
+                    const arrow = toggleButton.querySelector('span:last-child');
+                    const allToggles = faqContainer.querySelectorAll('.faq-toggle');
+                    allToggles.forEach(otherButton => {
+                        const otherContent = otherButton.nextElementSibling;
+                        const otherArrow = otherButton.querySelector('span:last-child');
+                        if (otherButton !== toggleButton) {
+                            otherContent.style.maxHeight = '0px';
+                            otherArrow.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                        content.style.maxHeight = '0px';
+                        arrow.style.transform = 'rotate(0deg)';
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        arrow.style.transform = 'rotate(180deg)';
+                    }
+                });
+            }
+
+            var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                freeMode: true,
+                spaceBetween: 20,
+                slidesPerView: 'auto',
+                speed: 10000,
+                autoplay: {
+                    delay: 1,
+                    disableOnInteraction: false
+                },
+            });
+
+            const audio = document.getElementById('background-audio');
+            const unmuteButton = document.getElementById('unmuteButton');
+            
+            if (audio && unmuteButton) {
+                audio.muted = true;
+                
+                unmuteButton.addEventListener('click', () => {
+                    audio.play().catch(error => console.log("O usuário precisa interagir com a página primeiro.", error));
+                    audio.muted = !audio.muted;
+                    const icon = unmuteButton.querySelector('i');
+                    if (audio.muted) {
+                        icon.classList.remove('fa-volume-high');
+                        icon.classList.add('fa-volume-mute');
+                        unmuteButton.setAttribute('title', 'Ativar Som');
+                    } else {
+                        icon.classList.remove('fa-volume-mute');
+                        icon.classList.add('fa-volume-high');
+                        unmuteButton.setAttribute('title', 'Desativar Som');
+                    }
+                });
+            }
+        });
+    </script>
+
+    <script id="hotmart_launcher_script">
+        (function(l,a,u,n,c,h,e,r){l['HotmartLauncherObject']=c;l[c]=l[c]||function(){
+        (l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
+        e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
+        })(window,document,'script','//launcher.hotmart.com/launcher.js','hot');
+
+        hot('account','514741ae-adfd-35c1-8a21-8200356e1eac');
+    </script>
+    
+</body>
+</html>
